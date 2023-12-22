@@ -9,7 +9,7 @@ The template requires [Node.js](https://nodejs.org/) v18+ to run. (questionable,
 Place the ftp_push.yaml file into .github/workflows 
 
 ```
-mv ftp_push.yaml .github/workflows 
+mkdir -p .github/workflows && mv ftp_push.yaml .github/workflows 
 ```
 
 Rename config_sample.js into config.js and provide the server credentials.
