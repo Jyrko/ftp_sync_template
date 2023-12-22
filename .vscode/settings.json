@@ -1,0 +1,31 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveSassCompile.settings.compileOnWatch": false,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.showOutputWindowOn": "Warning",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/src/css",
+            "savePathReplacementPairs": {
+                "/sass/": "/css/"
+            },
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/src/remote/css",
+            "savePathReplacementPairs": {
+                "/sass/": "/css/"
+            },
+            "generateMap": false
+        },
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**",
+        "/Exclude-Me/**"
+    ]
+}

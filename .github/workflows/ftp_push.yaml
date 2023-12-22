@@ -1,0 +1,14 @@
+name: learn-github-actions
+run-name: ${{ github.repository }} is syncing with remote server via FTP
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - run: npm i
+      - run: ls
+      - run: node ./src/main.js
